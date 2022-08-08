@@ -5,8 +5,8 @@ export LANG=C
 # How to run:
 # 1. Ensure you've checked your files into a git repo (`git init .`, `git add -A`, `git commit -m 'first'`)
 # 2. Modify these two values to your new app name
-NEW_NAME="YourAppName"
-NEW_OTP="your_app_name"
+NEW_NAME="MoveSDKExLiveviewExample"
+NEW_OTP="move_sdk_ex_liveview_example"
 # 3. Execute the script in terminal: `sh rename_phoenix_project.sh`
 
 set -e

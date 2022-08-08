@@ -1,10 +1,10 @@
 import Config
 
 # Configure your database
-config :petal_boilerplate, PetalBoilerplate.Repo,
+config :move_sdk_ex_liveview_example, MoveSDKExLiveviewExample.Repo,
   username: "postgres",
   password: "postgres",
-  database: "petal_boilerplate_dev",
+  database: "move_sdk_ex_liveview_example_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -15,7 +15,7 @@ config :petal_boilerplate, PetalBoilerplate.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with esbuild to bundle .js and .css sources.
-config :petal_boilerplate, PetalBoilerplateWeb.Endpoint,
+config :move_sdk_ex_liveview_example, MoveSDKExLiveviewExampleWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
   http: [ip: {127, 0, 0, 1}, port: 4000],
@@ -53,13 +53,13 @@ config :petal_boilerplate, PetalBoilerplateWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :petal_boilerplate, PetalBoilerplateWeb.Endpoint,
+config :move_sdk_ex_liveview_example, MoveSDKExLiveviewExampleWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/petal_boilerplate_web/(live|views)/.*(ex)$",
-      ~r"lib/petal_boilerplate_web/templates/.*(eex)$"
+      ~r"lib/move_sdk_ex_liveview_example_web/(live|views)/.*(ex)$",
+      ~r"lib/move_sdk_ex_liveview_example_web/templates/.*(eex)$"
     ]
   ]
 

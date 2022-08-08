@@ -20,7 +20,7 @@ erl_crash.dump
 *.ez
 
 # Ignore package tarball (built via "mix hex.build").
-petal_boilerplate-*.tar
+move_sdk_ex_liveview_example-*.tar
 
 # Ignore assets that are produced by build tools.
 /priv/static/assets/
