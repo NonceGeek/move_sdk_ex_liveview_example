@@ -1,4 +1,4 @@
-# Move SDK ex liveview Example
+# MOVE_SDK_ex liveview Example
 
 A clean install of the latest Phoenix with some extras to get you started:
 - Tailwind CSS - using the [mix library](https://hexdocs.pm/tailwind/Tailwind.html)
