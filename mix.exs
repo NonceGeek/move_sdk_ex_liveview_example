@@ -51,7 +51,12 @@ defmodule MoveSDKExLiveviewExample.MixProject do
       {:plug_cowboy, "~> 2.5"},
       {:petal_components, "~> 0.17.6"},
       {:tailwind, "~> 0.1", runtime: Mix.env() == :dev},
-      {:web3_move_ex, "~> 0.0.2"}
+      {:ecto, "~> 3.8.4", override: true},
+
+      # Move Ex
+      {:web3_move_ex, "~> 0.0.4"},
+      # Utils
+      {:ex_struct_translator, "~> 0.1.1"}
     ]
   end
 

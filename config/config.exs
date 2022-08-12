@@ -8,7 +8,13 @@
 import Config
 
 config :move_sdk_ex_liveview_example,
-  ecto_repos: [MoveSDKExLiveviewExample.Repo]
+  ecto_repos: [MoveSDKExLiveviewExample.Repo],
+
+  starcoin_endpoint: "http://localhost:9851", # !!Metion: change here to dif network
+  contract_addrs: %{
+    library: "0x1168e88ffc5cec53b398b42d61885bbb",
+    eth_sig_verifier: "0x1168e88ffc5cec53b398b42d61885bbb"
+   } # !!Metion: change here to dif contract addr
 
 # Configures the endpoint
 config :move_sdk_ex_liveview_example, MoveSDKExLiveviewExampleWeb.Endpoint,
@@ -16,6 +22,8 @@ config :move_sdk_ex_liveview_example, MoveSDKExLiveviewExampleWeb.Endpoint,
   render_errors: [view: MoveSDKExLiveviewExampleWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: MoveSDKExLiveviewExample.PubSub,
   live_view: [signing_salt: "Fd8SWPu3"]
+
+
 
 # Configures the mailer
 #

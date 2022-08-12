@@ -16,9 +16,8 @@ defmodule MoveSDKExLiveviewExampleWeb.Router do
 
   scope "/", MoveSDKExLiveviewExampleWeb do
     pipe_through :browser
-    live "/", PageLive, :index
+    live "/", ExampleLive, :index
     get "/template", PageController, :index
-    live "/live", PageLive, :index
     live "/live/modal/:size", PageLive, :modal
     live "/live/slide_over/:origin", PageLive, :slide_over
     live "/live/pagination/:page", PageLive, :pagination
