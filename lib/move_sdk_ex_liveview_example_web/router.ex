@@ -17,10 +17,14 @@ defmodule MoveSDKExLiveviewExampleWeb.Router do
   scope "/", MoveSDKExLiveviewExampleWeb do
     pipe_through :browser
     live "/", ExampleLive, :index
+
     get "/template", PageController, :index
     live "/live/modal/:size", PageLive, :modal
     live "/live/slide_over/:origin", PageLive, :slide_over
     live "/live/pagination/:page", PageLive, :pagination
+
+      # auth
+      live "/session/new", WalletLive, :index
   end
 
   # Other scopes may use custom stacks.
@@ -41,6 +45,7 @@ defmodule MoveSDKExLiveviewExampleWeb.Router do
     scope "/" do
       pipe_through :browser
       live_dashboard "/dashboard", metrics: MoveSDKExLiveviewExampleWeb.Telemetry
+
     end
   end
 

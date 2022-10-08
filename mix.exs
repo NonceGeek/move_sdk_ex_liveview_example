@@ -54,7 +54,7 @@ defmodule MoveSDKExLiveviewExample.MixProject do
       {:ecto, "~> 3.8.4", override: true},
 
       # Move Ex
-      {:web3_move_ex, "~> 0.0.4"},
+      {:web3_move_ex, "~> 0.1.1"},
       # Utils
       {:ex_struct_translator, "~> 0.1.1"}
     ]
