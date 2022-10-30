@@ -11,10 +11,14 @@ config :move_sdk_ex_liveview_example,
   ecto_repos: [MoveSDKExLiveviewExample.Repo],
 
   starcoin_endpoint: "http://localhost:9851", # !!Metion: change here to dif network
+  aptos_endpoint: "https://fullnode.testnet.aptoslabs.com/v1",
   contract_addrs: %{
     library: "0x1168e88ffc5cec53b398b42d61885bbb",
     eth_sig_verifier: "0x1168e88ffc5cec53b398b42d61885bbb"
-   } # !!Metion: change here to dif contract addr
+  }, # !!Metion: change here to dif contract addr
+  contract_addrs_aptos: %{
+    move_did: "0x1f9aa0aa17a3c8b02546df9353cdbee47f14bcaf25f5524492a17a8ab8c906ee" # test module
+  }
 
 # Configures the endpoint
 config :move_sdk_ex_liveview_example, MoveSDKExLiveviewExampleWeb.Endpoint,

@@ -1,4 +1,4 @@
-defmodule MoveSDKExLiveviewExampleWeb.ExampleLive do
+defmodule MoveSDKExLiveviewExampleWeb.ExampleStarcoinLive do
   use MoveSDKExLiveviewExampleWeb, :live_view
 
   alias MoveSDKExLiveviewExample.ContractInteractor.{Library, EthSigVerifier}
